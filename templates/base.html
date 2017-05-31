@@ -1,92 +1,198 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Kyle Diggs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <script src="https://use.typekit.net/prq0qjj.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
     <link href="/static/base.css" rel="stylesheet" type="text/css">
     <link href="/static/b1000.css" rel="stylesheet" type="text/css" media="screen and (max-width:1025px)">
     <link href="/static/b700.css" rel="stylesheet" type="text/css" media="screen and (max-width:700px)">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-28848356-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-    {% block head %}
-    {% endblock %}
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> {% block head %} {% endblock %}
 </head>
 
-<body class="flex col algn-cntr">
-    <header class="header constrain">
-        <img class="logo" src="/images/Logo.png">
-        <a class="t" href="/portfolio">Portfolio</a>
-        <a class="t" href="/resume">Resume</a>
-        <a class="t" href="/pricing">Pricing</a>
-        <a class="t" href="/store">Store</a>
-        <a class="t cta" href="/contact">Contact me!</a>
-    </header>
-    
-    {% if error %}
-    <div id="Modal-Con" class="constrain visible flex col algn-cntr">    
-    {% else %}
-    <div id="Modal-Con" class="constrain flex col algn-cntr">    
-    {% endif %}
-    {% block modal %}
-    {% endblock %}
+<body class="flex row nowrap">
+    <div class="sidebar-l flex col">
+        <img src="/assets/Logo.png">
+        <div class="player-card flex row algn-cntr">
+            <img src="/assets/gambino.jpg">
+            <div class="info flex col">
+                <span class="txt-grad highlight">Gambino</span>
+                <span>Balance: {{ user.bal }}</span>
+                <span>Worth: {{ user.net }}</span>
+            </div>
+        </div>
+        <div class="t button active">Earn</div>
+        <div class="t button">Coinflip</div>
+        <div class="t button">Climber</div>
+        <div class="t button">Roulette</div>
+        <div class="t button">Withdraw</div>
+        <div class="t button">Support</div>
     </div>
-        
-    {% if multipage and home %}
-    <a id="LeftArrow" class="t" href="/portfolio/{{ home }}/{{ links['prev'] }}?dir=left">
-        <div>
-            &lt;
+    <div class="main">
+        <div class="head flex row no-wrap spc-btwn algn-cntr">
+            <div class="recent flex row no-wrap">Recent Earners:</div>
+            <marquee>
+                <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
+                <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
+                <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
+                <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
+                <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
+                <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
+                <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
+                <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
+                <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
+            </marquee>
         </div>
-    </a>
-    <a id="RightArrow" class="t" href="/portfolio/{{ home }}/{{ links['next'] }}?dir=right">
-        <div>
-            &gt;
-        </div>
-    </a>
-    {% elif multipage %}
-    <a id="LeftArrow" class="t" href="/portfolio/{{ links['prev'] }}?dir=left">
-        <div>
-            &lt;
-        </div>
-    </a>
-    <a id="RightArrow" class="t" href="/portfolio/{{ links['next'] }}?dir=right">
-        <div>
-            &gt;
-        </div>
-    </a>
-    {% endif %}
-    
-    
-    {% if direction %}
-    <div class="port fly-in-{{direction}} constrain flex col">
-    {% else %}
-    <div class="port constrain flex col">
-    {% endif %}
-        {% block port %}
-        {% endblock %}
     </div>
-    
-    <div class="t page constrain flex col">
-        {% block content %}
-        {% endblock %}
+    <div class="sidebar-r flex col no-wrap">
+        <div class="head flex row algn-cntr">
+            <a class="t notify" href="/notifications"><img src="/assets/notify.png"></a>
+            <a class="t steam" href="/steam"><img src="/assets/steam.png"></a>
+            <a class="t facebook" href="/facebook"><img src="/assets/facebook.png"></a>
+            <a class="t twitter" href="/twitter"><img src="/assets/twitter.png"></a>
+        </div>
+        <div class="main">
+            <div class="player-card flex row">
+                <img src="/assets/gambino.jpg">
+                <div class="message">
+                    <div class="player">
+                        <span class="highlight txt-grad">Gambino</span>
+                        -
+                        <div class="tag highlight txt-grad">Admin</div>
+                    </div>
+                    
+                    lorem ipsum dalor khbsdakvsklbjvsfklbvsfbk vsdk;jsvd;jvb;asbvd sdvjsad'vkbhas dvsa dvns dvnsa
+                </div>
+            </div>
+            <div class="player-card flex row">
+                <img src="/assets/gambino.jpg">
+                <div class="message">
+                    <div class="player">
+                        <span class="highlight txt-grad">Gambino</span>
+                        -
+                        <div class="tag highlight txt-grad">Admin</div>
+                    </div>
+                    
+                    lorem ipsum dalor khbsdakvsklbjvsfklbvsfbk vsdk;jsvd;jvb;asbvd sdvjsad'vkbhas dvsa dvns dvnsa
+                </div>
+            </div>
+            <div class="player-card flex row">
+                <img src="/assets/gambino.jpg">
+                <div class="message">
+                    <div class="player">
+                        <span class="highlight txt-grad">Gambino</span>
+                        -
+                        <div class="tag highlight txt-grad">Admin</div>
+                    </div>
+                    
+                    lorem ipsum dalor khbsdakvsklbjvsfklbvsfbk vsdk;jsvd;jvb;asbvd sdvjsad'vkbhas dvsa dvns dvnsa
+                </div>
+            </div>
+            <div class="player-card flex row">
+                <img src="/assets/gambino.jpg">
+                <div class="message">
+                    <div class="player">
+                        <span class="highlight txt-grad">Gambino</span>
+                        -
+                        <div class="tag highlight txt-grad">Admin</div>
+                    </div>
+                    
+                    lorem ipsum dalor khbsdakvsklbjvsfklbvsfbk vsdk;jsvd;jvb;asbvd sdvjsad'vkbhas dvsa dvns dvnsa
+                </div>
+            </div>
+            <div class="player-card flex row">
+                <img src="/assets/gambino.jpg">
+                <div class="message">
+                    <div class="player">
+                        <span class="highlight txt-grad">Gambino</span>
+                        -
+                        <div class="tag highlight txt-grad">Admin</div>
+                    </div>
+                    
+                    lorem ipsum dalor khbsdakvsklbjvsfklbvsfbk vsdk;jsvd;jvb;asbvd sdvjsad'vkbhas dvsa dvns dvnsa
+                </div>
+            </div>
+            <div class="player-card flex row">
+                <img src="/assets/gambino.jpg">
+                <div class="message">
+                    <div class="player">
+                        <span class="highlight txt-grad">Gambino</span>
+                        -
+                        <div class="tag highlight txt-grad">Admin</div>
+                    </div>
+                    
+                    lorem ipsum dalor khbsdakvsklbjvsfklbvsfbk vsdk;jsvd;jvb;asbvd sdvjsad'vkbhas dvsa dvns dvnsa
+                </div>
+            </div>
+            <div class="player-card flex row">
+                <img src="/assets/gambino.jpg">
+                <div class="message">
+                    <div class="player">
+                        <span class="highlight txt-grad">Gambino</span>
+                        -
+                        <div class="tag highlight txt-grad">Admin</div>
+                    </div>
+                    
+                    lorem ipsum dalor khbsdakvsklbjvsfklbvsfbk vsdk;jsvd;jvb;asbvd sdvjsad'vkbhas dvsa dvns dvnsa
+                </div>
+            </div>
+            <div class="player-card flex row">
+                <img src="/assets/gambino.jpg">
+                <div class="message">
+                    <div class="player">
+                        <span class="highlight txt-grad">Gambino</span>
+                        -
+                        <div class="tag highlight txt-grad">Admin</div>
+                    </div>
+                    
+                    lorem ipsum dalor khbsdakvsklbjvsfklbvsfbk vsdk;jsvd;jvb;asbvd sdvjsad'vkbhas dvsa dvns dvnsa
+                </div>
+            </div>
+            <div class="player-card flex row">
+                <img src="/assets/gambino.jpg">
+                <div class="message">
+                    <div class="player">
+                        <span class="highlight txt-grad">Gambino</span>
+                        -
+                        <div class="tag highlight txt-grad">Admin</div>
+                    </div>
+                    
+                    lorem ipsum dalor khbsdakvsklbjvsfklbvsfbk vsdk;jsvd;jvb;asbvd sdvjsad'vkbhas dvsa dvns dvnsa
+                </div>
+            </div>
+            <div class="player-card flex row">
+                <img src="/assets/gambino.jpg">
+                <div class="message">
+                    <div class="player">
+                        <span class="highlight txt-grad">Gambino</span>
+                        -
+                        <div class="tag highlight txt-grad">Admin</div>
+                    </div>
+                    
+                    lorem ipsum dalor khbsdakvsklbjvsfklbvsfbk vsdk;jsvd;jvb;asbvd sdvjsad'vkbhas dvsa dvns dvnsa
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <textarea class="text-input" placeholder="Type your message here..."></textarea>
+            <a class="enter" href="/send"><img src="/assets/enter.png"></a>
+            <div class="chat-settings flex row">
+                <a class="arrow" href="/arrow"><img src="/assets/arrow.png"></a>
+                <a class="settings" href="/settings"><img src="/assets/settings.png"></a>
+                <a class="emoji" href="/emoji"><img src="/assets/emoji.png"></a>
+            </div>
+        </div>
     </div>
-    <footer class="footer constrain">
-        {% if user %}
-            <a href="/logout">Admin Logout</a>
-        {% else %}
-            <a href="/login">Admin Login</a>
-        {% endif %}
-    </footer>
+
 </body>
 
 </html>

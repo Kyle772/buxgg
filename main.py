@@ -338,7 +338,7 @@ class NotFound(Handler):
     
 class MainPage(Handler):
     def get(self):
-        self.render("portfolio.html", multipage=True)
+        self.render("base.html")
         
 class Contact(Handler):
     def get(self):
@@ -363,21 +363,11 @@ class Contact(Handler):
             self.render('contact.html', error=error, name=name, subj=subj, body=body, email=return_address)
 
 app = webapp2.WSGIApplication([
-    ('/', Portfolio),
-    ('/pricing', Pricing),
-    ('/contact', Contact),
+    ('/', MainPage),
     ('/login', Login),
     ('/logout', Logout),
     ('/register', SignUp),
     ('/success', Success),
-    ('/resume', Resume),
-    ('/portfolio/new', NewModal),
-    ('/portfolio', Portfolio),
-    ('/portfolio/([\w]+)/([0-9]+)', Modal),
-    ('/portfolio/([\w]+)/([0-9]+)/delete', DeleteModal),
-    ('/portfolio/([\w]+)/([0-9]+)/edit', EditModal),
-    ('/portfolio/([\w]+)', Portfolio),
-    ('/store', Store),
     ('/thanks', Thanks),
     ('/404', NotFound),
     ('/.*', NotFound)

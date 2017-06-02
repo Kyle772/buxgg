@@ -368,6 +368,7 @@ class Contact(Handler):
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
+    ('/earn', Earn),
     ('/login', Login),
     ('/logout', Logout),
     ('/register', SignUp),

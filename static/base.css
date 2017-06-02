@@ -151,6 +151,12 @@ a {
     align-items: center;
 }
 
+.j-cntr {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 .whiteback {
     background-color: white;
 }
@@ -260,9 +266,17 @@ p {
     font-size: 1em;
 }
 
-.highlight.txt-grad,
-.button.active {
-    background: -webkit-linear-gradient(90deg, #42a038, #B6E560) !important;
+.grad {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50b791+0,b6e560+100 */
+    background: #50b791; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #50b791 0%, #b6e560 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #50b791 0%,#b6e560 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #50b791 0%,#b6e560 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50b791', endColorstr='#b6e560',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.highlight.txt-grad, .sidebar-l .button.active  {
+    background: -webkit-linear-gradient(70deg, #42a038, #B6E560) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
@@ -366,6 +380,10 @@ body > .main {
     overflow: hidden;
     height: 100vh;
     box-sizing: border-box;
+}
+
+body > .main > .content {
+    min-height: calc(100vh - 40px);
 }
 
 body > .main:after {
@@ -596,4 +614,99 @@ body > .arrow img {
     z-index: 10;
     width: 10%;
     min-width: 300px;
+}
+
+/* Earn */
+
+.page {
+    background-color: #191f20;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    min-width: 250px;
+}
+
+.page > .button, .page > .button-nav > .button {
+    width: calc(33% - 10px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #394c4f;
+    border-radius: 5px;
+    padding: 4px 15px;
+    margin: 5px;
+}
+
+.page .button {
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.page > .button.active, .page .button:hover {
+    border: 2px solid rgba(255, 255, 255, .3);
+} 
+
+.page > .button-nav > .button {
+    width: auto;
+    min-width: 25%;
+    transform: scale(.8);
+}
+
+.page > .button-nav > .button.active {
+    color: #121617;
+    
+}
+
+.page > .play {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #394c4f;
+    border-radius: 5px;
+    padding: 7px 15px;
+    margin: 5px;
+    cursor: pointer;
+    
+    width: 100%;
+    color: #121617;
+}
+
+.page > .button-con {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #394c4f;
+    border-radius: 5px;
+    margin: 5px;
+    
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.page > .button-con > .button {
+    background-color: #121617;
+    color: #42a038;
+    padding: 4px 7.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.page > .button-con > .button:first-child, .page > .button-con > .button:last-child {
+    transform: scale(.7);
+}
+
+.page > .button-con > .button:nth-child(2), .page > .button-con > .button:nth-child(4) {
+    transform: scale(.5);
 }

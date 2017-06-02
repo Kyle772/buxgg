@@ -56,8 +56,8 @@ body {
 .t {
     -webkit-transition: all 200ms;
     transition: all 200ms;
-    -webkit-transition-timing-function: cubic-bezier(.8, .75, .39, 1.25);
-    transition-timing-function: cubic-bezier(.8, .75, .39, 1.25);
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 
 .constrain {

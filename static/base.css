@@ -191,6 +191,72 @@ a {
     cursor: pointer;
 }
 
+body > .arrow.clickable {
+    z-index: 5;
+}
+
+/* Simple Scrollbar */
+.ss-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+
+.ss-content {
+    height: 100%;
+    width: 100%;
+    padding: 0 32px 0 0;
+    position: relative;
+    right: -18px;
+    overflow: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.table.page .content .ss-content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: calc(100% + 48px);
+    margin-left: -20px;
+}
+
+.ss-scroll {
+    position: relative;
+    background: rgba(0, 0, 0, 0.1);
+    width: 9px;
+    border-radius: 4px;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.25s linear;
+}
+
+.ss-hidden {
+    display: none;
+}
+
+.ss-container:hover .ss-scroll {
+    opacity: 1;
+}
+
+.ss-grabbed {
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 /* Inputs */
 
 .textarea-tall {
@@ -311,7 +377,7 @@ body {
     position: relative;
     background-color: #191f20;
     width: 10%;
-    min-width: 250px;
+    min-width: 200px;
     color: white;
     min-height: 100vh;
     flex-shrink: 0;
@@ -383,7 +449,8 @@ body > .main {
 }
 
 body > .main > .content {
-    min-height: calc(100vh - 40px);
+    height: calc(100vh - 40px);
+    min-width: 700px;
 }
 
 body > .main:after {
@@ -451,20 +518,13 @@ body .main .head .player>span {
     max-height: 100vh;
     flex-shrink: 0;
     right: 0;
+    z-index: 10;
 }
 
 .sidebar-r.hide {
     min-width: 0;
     max-width: 0;
     right: -300px;
-}
-
-.side-head {
-    padding: 5px;
-    padding-bottom: 0;
-    height: 40px;
-    justify-content: flex-end;
-    box-sizing: border-box;
 }
 
 .side-head .chat {
@@ -614,6 +674,12 @@ body > .arrow img {
     z-index: 10;
     width: 10%;
     min-width: 300px;
+    padding: 5px;
+    padding-bottom: 0;
+    height: 40px;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    z-index: 15;
 }
 
 /* Earn */
@@ -623,8 +689,10 @@ body > .arrow img {
     color: white;
     padding: 10px;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: 2px;
     min-width: 250px;
+    max-width: 300px;
+    margin-right: 25px;
 }
 
 .page > .button, .page > .button-nav > .button {
@@ -652,7 +720,6 @@ body > .arrow img {
 .page > .button-nav > .button {
     width: auto;
     min-width: 25%;
-    transform: scale(.8);
 }
 
 .page > .button-nav > .button.active {
@@ -709,4 +776,74 @@ body > .arrow img {
 
 .page > .button-con > .button:nth-child(2), .page > .button-con > .button:nth-child(4) {
     transform: scale(.5);
+}
+
+.table.page {
+    min-width: 350px;
+    width: 40%;
+    max-width: 500px;
+    flex-grow: 1;
+    font-size: .85em;
+    overflow: hidden;
+    padding: 0;
+}
+
+.table.page > .button-nav {
+    width: 100%;
+    flex-shrink: 1;
+    background-color: #394c4f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.table.page > .button-nav .button {
+    width: 15%;
+    max-width: 150px;
+    min-width: 100px;
+    background-color: #121617;
+}
+
+.table.page > .button-nav .button.active {
+    width: 15%;
+    max-width: 150px;
+    min-width: 100px;
+    background-color: #121617;
+}
+
+.th, .tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 30px;
+    width: 100%;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.tr {
+    color: #394c4f;
+}
+
+.tr:nth-child(odd) {
+    background-color: #121617;
+}
+
+.th div, .tr div {
+    width: 15%;
+    height: 30px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.th div:first-child, .tr div:first-child {
+    width: 35%;
+}
+
+.table.page .content {
+    max-height: 80vh;
+    overflow: hidden;
 }

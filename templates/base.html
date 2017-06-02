@@ -16,11 +16,18 @@
     <link href="/static/base.css" rel="stylesheet" type="text/css">
     <link href="/static/b1000.css" rel="stylesheet" type="text/css" media="screen and (max-width:1025px)">
     <link href="/static/b700.css" rel="stylesheet" type="text/css" media="screen and (max-width:700px)">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> {% block head %} {% endblock %}
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="/js/base.js"></script>
+    {% block head %} 
+    {% endblock %}
 </head>
 
 <body class="flex row nowrap">
-    <div class="sidebar-l flex col">
+    <div id="sidebar-l" class="sidebar-l flex col">
         <img src="/assets/Logo.png">
         <div class="player-card flex row algn-cntr">
             <img src="/assets/gambino.jpg">
@@ -30,17 +37,17 @@
                 <span>Worth: {{ user.net }}</span>
             </div>
         </div>
-        <div class="t button active">Earn</div>
+        <a class="no-link" href="/earn"><div class="t button active">Earn</div></a>
         <div class="t button">Coinflip</div>
         <div class="t button">Climber</div>
         <div class="t button">Roulette</div>
         <div class="t button">Withdraw</div>
         <div class="t button">Support</div>
     </div>
-    <div class="main">
+    <div id="main" class="t main">
         <div class="head flex row no-wrap spc-btwn algn-cntr">
             <div class="recent flex row no-wrap">Recent Earners:</div>
-            <marquee>
+            <marquee class="t earners">
                 <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
                 <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
                 <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
@@ -52,14 +59,28 @@
                 <div class="player">Gambino <span class="txt-grad highlight">-10</span></div>
             </marquee>
         </div>
-    </div>
-    <div class="sidebar-r flex col no-wrap">
-        <div class="head flex row algn-cntr">
-            <a class="t notify" href="/notifications"><img src="/assets/notify.png"></a>
-            <a class="t steam" href="/steam"><img src="/assets/steam.png"></a>
-            <a class="t facebook" href="/facebook"><img src="/assets/facebook.png"></a>
-            <a class="t twitter" href="/twitter"><img src="/assets/twitter.png"></a>
+        <div class="content">
+            {% block content %}
+            {% endblock %}
         </div>
+    </div>
+    <div class="side-head flex row algn-cntr">
+        <a class="t notify" href="/notifications">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/>
+            </svg>
+        </a>
+        <a class="t chat" href="/notifications">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+        </a>
+        <a class="t steam" href="/steam"><img src="/assets/steam.png"></a>
+        <a class="t facebook" href="/facebook"><img src="/assets/facebook.png"></a>
+        <a class="t twitter" href="/twitter"><img src="/assets/twitter.png"></a>
+    </div>
+    <a class="t arrow clickable"><img src="/assets/arrow.png"></a>
+    <div id="sidebar-r" class="t sidebar-r flex col no-wrap">
         <div class="main">
             <div class="player-card flex row">
                 <img src="/assets/gambino.jpg">
@@ -186,7 +207,7 @@
             <textarea class="text-input" placeholder="Type your message here..."></textarea>
             <a class="enter" href="/send"><img src="/assets/enter.png"></a>
             <div class="chat-settings flex row">
-                <a class="arrow" href="/arrow"><img src="/assets/arrow.png"></a>
+                <a class="arrow clickable flex row j-cntr algn-cntr"><img src="/assets/arrow.png"></a>
                 <a class="settings" href="/settings"><img src="/assets/settings.png"></a>
                 <a class="emoji" href="/emoji"><img src="/assets/emoji.png"></a>
             </div>

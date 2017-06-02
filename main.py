@@ -340,6 +340,10 @@ class MainPage(Handler):
     def get(self):
         self.render("base.html")
         
+class Earn(Handler):
+    def get(self):
+        self.render("earn.html")
+        
 class Contact(Handler):
     def get(self):
         self.render('contact.html')

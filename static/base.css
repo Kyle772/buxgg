@@ -159,6 +159,10 @@ a {
     display: block !important;
 }
 
+.no-link {
+    text-decoration: none;
+}
+
 .error {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -177,6 +181,9 @@ a {
     margin-right: 15px;
 }
 
+.clickable {
+    cursor: pointer;
+}
 
 /* Inputs */
 
@@ -281,6 +288,7 @@ p {
 body {
     margin: 0;
     padding: 0;
+    background-color: #121617;
 }    
 
 /*sidebar-l*/
@@ -376,6 +384,7 @@ body .main .head {
     width: 100%;
     height: 35px;
     font-weight: 700;
+    margin-top: 5px;
     color: #5c7377;
     padding: 15px;
     box-sizing: border-box;
@@ -401,6 +410,17 @@ body .main .head .player>span {
     margin-left: 5px;
 }
 
+.main .earners {
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.main .earners.expand {
+    margin-right: 300px;
+}
+
 /* sidebar-r */
 
 .sidebar-r {
@@ -412,38 +432,56 @@ body .main .head .player>span {
     min-height: 100vh;
     max-height: 100vh;
     flex-shrink: 0;
+    right: 0;
 }
 
-.sidebar-r .head {
+.sidebar-r.hide {
+    min-width: 0;
+    max-width: 0;
+    right: -300px;
+}
+
+.side-head {
     padding: 5px;
-    height: 35px;
+    padding-bottom: 0;
+    height: 40px;
     justify-content: flex-end;
+    box-sizing: border-box;
 }
 
-.sidebar-r .head .notify {
+.side-head .chat {
     margin-right: auto;
 }
 
-.sidebar-r .head a {
+.notify svg, .chat svg {
+    stroke: white;
+}
+
+.notify svg:hover, .chat svg:hover {
+    stroke: #42a038;
+}
+
+.side-head a {
     height: 60%;
     padding: 5px;
     filter: grayscale(100%) brightness(200%);
 }
 
-.sidebar-r .head a:hover {
+.side-head a:hover {
     filter: grayscale(0%) brightness(100%);
 }
 
-.sidebar-r .head a img {
+.side-head a img {
     height: 100%;
 }
 
 .sidebar-r .main {
     overflow-y: scroll;
+    margin-top: 45px;
     height: 100vh;
     flex-shrink: 1;
     overflow-x: hidden;
-    margin-right: -15px;
+    margin-right: -18px;
 }
 
 .sidebar-r .foot {
@@ -522,9 +560,40 @@ body .main .head .player>span {
     margin-right: auto;
     transform: rotatey(180deg);
     height: 30px;
+    width: 30px;
+    align-items: baseline;
+    justify-content: center;
 }
 
 .sidebar-r .foot .chat-settings .arrow img {
     height: 15px;
     padding-top: 0px;
+}
+
+body > .arrow {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    padding: 10px;
+    background-color: #191f20;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom: #394c4f solid 3px;
+}
+
+body > .arrow:hover {
+    border-bottom: #394c4f solid 1px;
+}
+
+body > .arrow img {
+    height: 15px;
+}
+
+.side-head {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 10%;
+    min-width: 300px;
 }

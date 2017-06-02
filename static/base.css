@@ -691,7 +691,6 @@ body > .arrow img {
     font-weight: 700;
     border-radius: 2px;
     min-width: 250px;
-    max-width: 300px;
     margin-right: 25px;
 }
 
@@ -781,7 +780,8 @@ body > .arrow img {
 .table.page {
     min-width: 350px;
     width: 40%;
-    max-width: 500px;
+    max-width: 700px;
+    max-height: 575px;
     flex-grow: 1;
     font-size: .85em;
     overflow: hidden;

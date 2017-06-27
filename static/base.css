@@ -157,6 +157,14 @@ a {
     justify-content: center;
 }
 
+.algn-strt {
+    align-items: flex-start;
+}
+
+.algn-end {
+    align-items: flex-end;
+}
+
 .whiteback {
     background-color: white;
 }
@@ -197,16 +205,16 @@ body > .arrow.clickable {
 
 /* Simple Scrollbar */
 .ss-wrapper {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+    overflow: auto;
+    height: calc(100vh - 30px);
     position: relative;
     z-index: 1;
     float: left;
+    padding-top: 15px;
+    margin-right: -20px;
 }
 
 .ss-content {
-    height: 100%;
     width: 100%;
     padding: 0 35px 0 0;
     position: relative;
@@ -215,9 +223,14 @@ body > .arrow.clickable {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     overflow-x: hidden;
+}
+
+.climber > .content > .ss-wrapper > .ss-content {
+    align-content: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .table.page .content .ss-content {
@@ -309,23 +322,23 @@ h1 {
 h1.huge {
     margin-top: -.5em;
     line-height: 1em;
-    font-size: 3em;
+    font-size: 2.827em;
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 1.414em;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 0.707em;
 }
 
 h5 {
-    font-size: 1em;
+    font-size: .5em;
 }
 
 p {
@@ -690,9 +703,8 @@ body > .arrow img {
     font-weight: 700;
     border-radius: 2px;
     min-width: 250px;
-    padding-right: 25px;
-    margin-top: 50px;
     width: 100%;
+    overflow: hidden;
 }
 
 .page > .button, .page > .button-nav > .button {
@@ -816,6 +828,10 @@ body > .arrow img {
     background-color: #121617;
 }
 
+.table.page .ss-wrapper {
+    padding-top: 0;
+}
+
 .th, .tr {
     display: flex;
     flex-direction: row;
@@ -862,4 +878,94 @@ body > .arrow img {
 
 .climber .climber-button-con {
     max-width: 350px;
+}
+
+/* Earn */
+
+body > .earn > .content {
+    min-width: 0;
+}
+
+.earn .page .section {
+    width: 100%;
+}
+
+.earn .content .page h1::after { 
+    content: "";
+    display: block;
+    width: 75px;
+    height: 3px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50b791+0,b6e560+100 */
+    background: #50b791; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #50b791 0%, #b6e560 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #50b791 0%,#b6e560 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #50b791 0%,#b6e560 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50b791', endColorstr='#b6e560',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.earn .content .page .section:first-child {
+    margin-bottom: 50px;
+}
+
+.earn .content .page .section:last-child {
+    padding-bottom: 80px;
+}
+
+.earn .content .page .section:last-child .button {
+    width: 100%;
+}
+
+
+.earn .content .page .section .section {
+    max-width: 200px;
+}
+
+.earn .content .page .section .button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 1.25em;
+    font-weight: 700;
+    border-radius: 22px;
+    color: white;
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.earn .content .page .section .button::after {
+    display: block;
+    content: "";
+    background-color: #191f20;
+    border-radius: 18px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: -1;
+}
+
+.earn .content .page .section .button::before {
+    display: block;
+    content: "";
+    background-color: #191f20;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50b791+0,b6e560+100 */
+    background: #50b791; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #50b791 0%, #b6e560 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #50b791 0%,#b6e560 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #50b791 0%,#b6e560 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50b791', endColorstr='#b6e560',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    z-index: -2;
 }

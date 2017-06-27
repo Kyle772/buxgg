@@ -71,11 +71,23 @@ class Handler(webapp2.RequestHandler):
     def render(self, template, **kw):
         user = self.get_user()
         navTab = self.get_navTab()
+        
         tabName = navTab[1:].title()
-        self.write(self.render_str(template, user=user, navTab=navTab, tabName=tabName, **kw))
+        self.write(self.render_str(
+            template,
+            user=user,
+            navTab=navTab,
+            tabName=tabName,
+            currentTabs=self.get_currentTabs(), 
+            **kw))
         
     def debug(self, text):
         logging.info(str(text))
+        
+    def get_currentTabs(self):
+        s = str(self.request.path)
+        s = s.rsplit('/', 1)
+        return s
     
     # -----
     # --Cookie Handling

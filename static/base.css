@@ -208,7 +208,7 @@ body > .arrow.clickable {
 .ss-content {
     height: 100%;
     width: 100%;
-    padding: 0 32px 0 0;
+    padding: 0 35px 0 0;
     position: relative;
     right: -18px;
     overflow: auto;
@@ -685,13 +685,14 @@ body > .arrow img {
 /* Earn */
 
 .page {
-    background-color: #191f20;
     color: white;
     padding: 10px;
     font-weight: 700;
     border-radius: 2px;
     min-width: 250px;
-    margin-right: 25px;
+    padding-right: 25px;
+    margin-top: 50px;
+    width: 100%;
 }
 
 .page > .button, .page > .button-nav > .button {
@@ -777,8 +778,11 @@ body > .arrow img {
     transform: scale(.5);
 }
 
+/* Table stuff */
+
 .table.page {
-    min-width: 350px;
+    background-color: #191f20;
+    min-width: 400px;
     width: 40%;
     max-width: 700px;
     max-height: 575px;
@@ -846,4 +850,16 @@ body > .arrow img {
 .table.page .content {
     max-height: 80vh;
     overflow: hidden;
+}
+
+/* Climber */
+.climber .page {
+    background-color: #191f20;
+    padding-right: 0; 
+    margin-right: 15px;
+    max-width: 500px;
+}
+
+.climber .climber-button-con {
+    max-width: 350px;
 }

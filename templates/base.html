@@ -14,7 +14,7 @@
         } catch (e) {}
     </script>
     <link href="/static/base.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/png" href="/assets/logo.png">
+    <link rel="icon" type="image/png" href="/assets/Logo.png">
     <link href="/static/b1000.css" rel="stylesheet" type="text/css" media="screen and (max-width:1025px)">
     <link href="/static/b700.css" rel="stylesheet" type="text/css" media="screen and (max-width:700px)">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
@@ -38,9 +38,9 @@
                 <span>Worth: {{ user.net }}</span>
             </div>
         </div>
-        <a class="no-link" href="/earn"><div class="t button active">Earn</div></a>
+        <a class="no-link" href="/earn"><div class="t button{{ ' active' if 'earn' in navTab }}">Earn</div></a>
         <div class="t button">Coinflip</div>
-        <div class="t button">Climber</div>
+        <a class="no-link" href="/climber"><div class="t button{{ ' active' if 'climber' in navTab }}">Climber</div></a>
         <div class="t button">Roulette</div>
         <div class="t button">Withdraw</div>
         <div class="t button">Support</div>

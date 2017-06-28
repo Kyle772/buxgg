@@ -1,0 +1,6 @@
+secret.py
+secret.pyc
+main.pyc
+**/assets
+**/icons
+/js/libs/**

@@ -374,6 +374,10 @@ class Coinflip(Handler):
     def get(self):
         self.render("coinflip.html")
         
+class Roulette(Handler):
+    def get(self):
+        self.render("roulette.html")
+        
 class Contact(Handler):
     def get(self):
         self.render('contact.html')
@@ -401,6 +405,7 @@ app = webapp2.WSGIApplication([
     ('/earn', Earn),
     ('/climber', Climber),
     ('/coinflip', Coinflip),
+    ('/roulette', Roulette),
     ('/login', Login),
     ('/logout', Logout),
     ('/register', SignUp),

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% if False %}
+<link href="/static/base.css" rel="stylesheet" type="text/css">
+{% endif %}
+
+{% block content %}
+<div class="content flex row no-wrap algn-cntr j-cntr scrollbar-outer">
+    <div class="page flex col">
+        <div class="section">
+            <h1>Surveys</h1>
+            <p>
+            1. Choose any of the networks below.<br>
+            2. Sort by easiest, complete simple tasks for points.<br>
+            3. If your surveys don't work, try using their contact/support buttons on the network pages.
+            </p>
+            <div class="button-con fw flex row wrap spc-arnd">
+                <div class="button">AdGatemedia</div>
+                <div class="button">OfferToro</div>
+                <div class="button">Persona.ly</div>
+            </div>
+        </div>
+        <div class="section">
+            <h1>Promotions</h1>
+            <p>
+                Lorem ipsum dolor sit amet dolor sit amet lorem ipsum
+            </p>
+            <div class="button-con flex row wrap spc-arnd">
+                <div class="section flex col txt-cntr algn-cntr">
+                    <div class="button-head">
+                        <h2>Steam group</h2>
+                        <h4>Reward: <span class="highlight txt-grad">50</span></h4>
+                    </div>
+                    <div class="button">Join</div>
+                </div>
+                <div class="section flex col txt-cntr algn-cntr">
+                    <div class="button-head">
+                        <h2>Twitter</h2>
+                        <h4>Reward: <span class="highlight txt-grad">50</span></h4>
+                    </div>
+                    <div class="button">Follow</div>
+                </div>
+                <div class="section flex col">
+                    <div class="button-head txt-cntr algn-cntr">
+                        <h2>Facebook</h2>
+                        <h4>Reward: <span class="highlight txt-grad">50</span></h4>
+                    </div>
+                    <div class="button">Like</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

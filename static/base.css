@@ -203,6 +203,14 @@ body > .arrow.clickable {
     z-index: 5;
 }
 
+.mar {
+    margin-right: auto;
+}
+
+.mal {
+    margin-left: auto;
+}
+
 /* Inputs */
 
 .textarea-tall {
@@ -751,8 +759,6 @@ body > .arrow img {
 }
 
 .table.page > .button-nav .button {
-    width: 15%;
-    max-width: 150px;
     min-width: 100px;
     background-color: #121617;
 }
@@ -778,6 +784,10 @@ body > .arrow img {
     flex-shrink: 0;
 }
 
+.th {
+
+}
+
 .tr {
     color: #394c4f;
 }
@@ -799,9 +809,10 @@ body > .arrow img {
     width: 35%;
 }
 
-.table.page .content {
+.table.page > .content {
     max-height: 80vh;
     overflow: hidden;
+    position: relative;
 }
 
 /* Climber */
@@ -913,4 +924,44 @@ body > .earn > .content {
     background: linear-gradient(45deg,  #50b791 0%,#b6e560 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50b791', endColorstr='#b6e560',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     z-index: -2;
+}
+
+/* Coinflip */
+.coinflip .table.page {
+    width: 80%;
+    max-width: 800px;
+    min-width: 250px;
+    flex-grow: 0;
+}
+
+.coinflip .table.page .tr {
+    color: white;
+    height: 40px;
+    align-items: center;
+}
+
+.coinflip .table.page .tr div {
+    flex-grow: 0;
+    overflow: hidden;
+}
+
+.coinflip .table.page .tr .button {
+    padding: 5px 10px;
+    height: 70%;
+    font-weight: 700;
+    background-color: #50b75e;
+    width: auto;
+    font-size: .8em;
+    color: black;
+    box-sizing: border-box;
+}
+
+.coinflip .table.page > .content > .content {
+    height: 80vh;
+}
+
+.coinflip .table.page .image, .coinflip .table.page .image img {
+    width: 25px;
+    overflow: hidden;
+    border-radius: 50%;
 }

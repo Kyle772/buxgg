@@ -741,8 +741,6 @@ body > .arrow img {
     min-width: 400px;
     width: 40%;
     max-width: 700px;
-    max-height: 575px;
-    flex-grow: 1;
     font-size: .85em;
     overflow: hidden;
     padding: 0;
@@ -756,10 +754,10 @@ body > .arrow img {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    min-height: 40px;
 }
 
 .table.page > .button-nav .button {
-    min-width: 100px;
     background-color: #121617;
 }
 
@@ -770,15 +768,11 @@ body > .arrow img {
     background-color: #121617;
 }
 
-.table.page .ss-wrapper {
-    padding-top: 0;
-}
-
 .th, .tr {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 30px;
+    height: 40px;
     width: 100%;
     justify-content: space-between;
     flex-shrink: 0;
@@ -798,21 +792,26 @@ body > .arrow img {
 
 .th div, .tr div {
     width: 15%;
-    height: 30px;
+    height: 40px;
     flex-grow: 1;
     display: flex;
     align-items: center;
     padding: 0 10px;
+    display: flex;
 }
 
 .th div:first-child, .tr div:first-child {
     width: 35%;
 }
 
-.table.page > .content {
+.table.page > .content-con {
     max-height: 80vh;
-    overflow: hidden;
     position: relative;
+}
+
+.table.page > .content-con > .content {
+    position: relative;
+    max-height: 380px;
 }
 
 /* Climber */
@@ -826,7 +825,7 @@ body > .arrow img {
 
 .climber .col .climber-button-con {
     margin-bottom: 50px;
-    padding-top: 400px;
+    padding-top: 450px;
 }
 
 .climber .col .table.page {
@@ -838,7 +837,6 @@ body > .arrow img {
 }
 
 .climber .table.page {
-    min-height: 400px;
 }
 
 /* Earn */

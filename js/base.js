@@ -28,6 +28,14 @@ $(document).ready(function () {
         $("#main").removeClass("expand");
         $(".earners").removeClass("expand");
     });
+    var rot = 9.72972972972973;
+    $(".roulette .wheel .color").each( function () {
+        console.log(rot, $(this).index());
+        $(this).css("transform", "rotate(" + rot * $(this).index() + "deg)");
+        $(this).css("z-index", $(".roulette .wheel .color").length - $(this).index());
+    });
+    
+    
     resizeCheck();
     $('.scrollbar-outer').scrollbar();
     new ResizeSensor($("#main > .content"), function () {

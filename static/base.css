@@ -963,3 +963,80 @@ body > .earn > .content {
     overflow: hidden;
     border-radius: 50%;
 }
+
+/* Roulette */
+.roulette .wheel {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #121617;
+    border: 5px solid #121617;
+}
+
+.roulette .wheel .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 43;
+}
+
+.roulette .wheel .color-con {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 250px;
+    width: 250px;
+}
+
+.roulette .wheel .color-con:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: #121617;
+    z-index: 40;
+    left: 5px;
+    top: 5px;
+}
+
+.roulette .wheel .color-con:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #121617;
+    left: -5px;
+    top: -5px;
+    z-index: 41;
+}
+
+.roulette .wheel .color {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    border-top: 2px solid #121617;
+    height: 21px;
+    box-sizing: border-box;
+    transform: translateY(-50%);
+    transform-origin: left top;
+}
+
+.roulette .wheel .color[data-color="green"] {
+    background-color: green;
+}
+.roulette .wheel .color[data-color="grey"] {
+    background-color: grey;
+}
+.roulette .wheel .color[data-color="purple"] {
+    background-color: purple;
+}
+.roulette .wheel .color[data-color="yellow"] {
+    background-color: yellow;
+}

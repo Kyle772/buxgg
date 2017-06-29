@@ -1,6 +1,6 @@
 $(document).ready(function () {
     function resizeCheck() {
-        itemWidth = $("#main > .content").width()
+        var itemWidth = $("#main > .content").width();
         console.log(itemWidth);
         if (itemWidth < 685) {
             console.log("Smaller");
@@ -18,30 +18,94 @@ $(document).ready(function () {
         }
     }
     
-    $(".chat-settings > .arrow").on("click", function () {
-        console.log("arrow clicked");
+    //Take from w3Schools https://www.w3schools.com/js/js_cookies.asp
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        console.log("cookie not set");
+        return "";
+    }
+    
+    function checkExistCookie(cname) {
+        var cookie = getCookie(cname);
+        if (cookie == "" ) {
+            console.log("Cookie is not assigned on check");
+            return false;
+        } else {
+            console.log("Cookie is assigned on check");
+            console.log("- Cookie value is currently " + getCookie(cname));
+            return true;
+        }
+    }
+    
+    function deleteCookie(cname) {
+        console.log("deleting cookie");
+        document.cookie = cname + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    }
+    
+    function collapseRight() {
+        if (checkExistCookie("Sidebarr")) {
+            deleteCookie("Sidebarr");
+        };
         $(".sidebar-r").addClass("hide");
         $("#main").removeClass("expand-r");
         $(".earners").addClass("expand");
-    });
-    $("body > .arrow").on("click", function () {
-        console.log("arrow clicked");
+        setCookie("Sidebarr", "false", "1");
+        console.log("Sidebar cookie assigned false");
+    }
+    
+    function expandRight() {
+        if (checkExistCookie("Sidebarr")) {
+            deleteCookie("Sidebarr");
+        };
         $(".sidebar-r").removeClass("hide");
         $("#main").addClass("expand-r");
         $(".earners").removeClass("expand");
+        setCookie("Sidebarr", "true", "1");
+        console.log("Sidebar cookie assigned true")
+    }
+    
+    $(".chat-settings > .arrow").on("click", function () {
+        //collapsing
+        console.log("arrow clicked");
+        collapseRight();
     });
+    $("body > .arrow").on("click", function () {
+        //expanding
+        console.log("arrow clicked");
+        expandRight();
+    });
+    
+    if (getCookie("Sidebarr") == "false") {
+        collapseRight();
+    } else {
+        expandRight();
+    }
+    
+    // roulette generator
     var rot = 9.72972972972973;
     $(".roulette .wheel .color").each( function () {
         console.log(rot, $(this).index());
         $(this).css("transform", "rotate(" + rot * $(this).index() + "deg)");
         $(this).css("z-index", $(".roulette .wheel .color").length - $(this).index());
     });
-    
-    if ($(".sidebar-r").width() <= 10) {
-        $("#main").removeClass("expand-r");
-    } else {
-        $("#main").addClass("expand-r");
-    }
     
     resizeCheck();
     $('.scrollbar-outer').scrollbar();

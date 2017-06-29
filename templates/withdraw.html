@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% if False %}
+<link href="/static/base.css" rel="stylesheet" type="text/css">
+{% endif %}
+
+{% block content %}
+<div class="content flex row no-wrap algn-cntr j-cntr scrollbar-outer">
+    <div class="page flex col">
+        <div class="section">
+            <h1>Withdraw</h1>
+            <p>
+                Send your points straight to your bitcoin wallet! <a>Don't have a wallet?</a><br>
+                Min. Required: 25,000 - up to 15 min wait
+            </p>
+            <div class="ui flex row wrap spc-arnd">
+                <div class="amount-con flex col">
+                    <div class="button-con flex row">
+                        <div class="active button">Bitcoin</div>
+                        <div class="button">Paypal</div>
+                    </div>
+                    <label>AMOUNT</label>
+                    <input class="btc col-1" type="number">
+                    <label>BTC ADDRESS</label>
+                    <input class="btcAdr col-1" type="number" disabled>
+                    <div class="button flex algn-cntr j-cntr active col-1">WITHDRAW</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

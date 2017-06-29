@@ -677,12 +677,11 @@ body > .arrow img {
 }
 
 .page .button {
-    border: 2px solid transparent;
     cursor: pointer;
 }
 
 .page > .button.active, .page .button:hover {
-    border: 2px solid rgba(255, 255, 255, .3);
+    filter:saturate(1.5);
 } 
 
 .page > .button-nav > .button {
@@ -866,7 +865,7 @@ body > .earn > .content {
     
 }
 
-.earn .content .page h1::after { 
+.earn .content .page h1::after, .withdraw .content .page h1::after { 
     content: "";
     display: block;
     width: 75px;
@@ -1204,3 +1203,53 @@ body > .earn > .content {
     max-height: 300px;
 }
 
+/* Withdraw */
+
+.withdraw .ui {
+    width: auto;
+    padding: 15px 45px;
+    background-color: #191f20;
+    margin-top: 30px;
+}
+
+.withdraw .ui .button {
+    padding: 10px 15px;
+    background-color: #394c4f;
+    color: white;
+    box-sizing: border-box;
+}
+
+.withdraw .ui .button.active {
+    color: black;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50b791+0,b6e560+100 */
+    background: #50b791; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #50b791 0%, #b6e560 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #50b791 0%,#b6e560 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #50b791 0%,#b6e560 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50b791', endColorstr='#b6e560',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.withdraw .ui input[type="number"] {
+    background-color: #121617;
+    height: 60px;
+    outline: none;
+    border: none;
+    color: #50b75e;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.withdraw .ui label {
+    position: relative;
+    top: 25px;
+    left: 10px;
+    z-index: 3;
+}
+
+.withdraw .ui > .amount-con > .button {
+    margin-top: 15px;
+}

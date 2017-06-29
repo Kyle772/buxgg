@@ -4,14 +4,16 @@ $(document).ready(function () {
         console.log(itemWidth);
         if (itemWidth < 685) {
             console.log("Smaller");
-            $("#main > .scroll-wrapper > .content").addClass("col").removeClass("row");
+            $("#main .scroll-wrapper > .content").addClass("col").removeClass("row");
+            $(".section.roulette").addClass("col").removeClass("row");
             $("#main > .content").addClass("col").removeClass("row");
             console.log("Done");
         }
         if (itemWidth >= 685) {
             console.log("Bigger");
-            $("#main > .scroll-wrapper > .content").addClass("row").removeClass("col");
-            $("#main > .content").addClass("row").removeClass("col");
+            $("#main > .content > .scroll-wrapper > .content").addClass("row").removeClass("col");
+            $(".section.roulette").addClass("row").removeClass("col");
+            $("#main > .content > .content").addClass("row").removeClass("col");
             console.log("Done");
         }
     }
@@ -19,13 +21,13 @@ $(document).ready(function () {
     $(".chat-settings > .arrow").on("click", function () {
         console.log("arrow clicked");
         $(".sidebar-r").addClass("hide");
-        $("#main").addClass("expand");
+        $("#main").removeClass("expand-r");
         $(".earners").addClass("expand");
     });
     $("body > .arrow").on("click", function () {
         console.log("arrow clicked");
         $(".sidebar-r").removeClass("hide");
-        $("#main").removeClass("expand");
+        $("#main").addClass("expand-r");
         $(".earners").removeClass("expand");
     });
     var rot = 9.72972972972973;
@@ -35,6 +37,11 @@ $(document).ready(function () {
         $(this).css("z-index", $(".roulette .wheel .color").length - $(this).index());
     });
     
+    if ($(".sidebar-r").width() <= 10) {
+        $("#main").removeClass("expand-r");
+    } else {
+        $("#main").addClass("expand-r");
+    }
     
     resizeCheck();
     $('.scrollbar-outer').scrollbar();

@@ -3,7 +3,7 @@
 {% block content %}
 <div class="content flex row no-wrap algn-cntr j-cntr scrollbar-outer">
     <div class="page flex col">
-        <div class="section roulette">
+        <div class="section roulette flex j-cntr algn-cntr">
             <div class="wheel">
                 <div class="message">ROLLING IN</div>
                 <div class="color-con">
@@ -48,36 +48,2691 @@
             </div>
             <div class="ui flex row">
                 <div class="arrow"></div>
-                <div class="button-con flex col wrap">
+                <div class="button-con flex row wrap">
                     <div class="button">+1</div>
                     <div class="button">+5</div>
-                    <div class="button">1/2</div>
-                    <div class="button">X2</div>
                     <div class="button">+10</div>
                     <div class="button">+50</div>
+                    <div class="button">1/2</div>
+                    <div class="button">X2</div>
                     <div class="button">MAX</div>
                     <div class="button">CLEAR</div>
                 </div>
                 <div class="amount-con flex col no-wrap">
-                    <label>
-                    BET AMOUNT
+                    <label>BET AMOUNT</label>
                     <input type="number">
-                    </label>
-                    <div class="button-con">
-                        <div class="col-1 flex row spc-btwn">
-                            <div class="button">2x</div>
-                            <div class="button">3x</div>
-                            <div class="button">5x</div>
-                            <div class="button">50x</div>
+                    <div class="button-con flex col">
+                        <div class="col-1 flex row no-wrap spc-btwn">
+                            <div data-color="grey" class="color button">2x</div>
+                            <div data-color="green" class="color button">3x</div>
+                            <div data-color="purple" class="color button">5x</div>
+                            <div data-color="yellow" class="color button">50x</div>
                         </div>
-                        <div class="button col-1">PLACE BET</div>
+                        <div data-color="green" class="color button col-1">PLACE BET</div>
                     </div>
-                    
                 </div>
             </div>
         </div>
-        <div class="section">
-
+        <div class="section leaderboards">
+            <div class="section flex row wrap spc-arnd">
+                <div class="table">
+                    <div data-color="grey" class="color tr flex j-cntr algn-cntr txt-cntr">
+                        <p class="txt-cntr col-1">2X</p>
+                    </div>
+                    <div class="content scrollbar-outer">
+                        <div class="tr active">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div data-color="green" class="color tr flex j-cntr algn-cntr txt-cntr">
+                        <p class="txt-cntr col-1">3X</p>
+                    </div>
+                    <div class="content scrollbar-outer">
+                        <div class="tr active">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div data-color="purple" class="color tr flex j-cntr algn-cntr txt-cntr">
+                        <p class="txt-cntr col-1">5X</p>
+                    </div>
+                    <div class="content scrollbar-outer">
+                        <div class="tr active">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div data-color="yellow" class="color tr flex j-cntr algn-cntr txt-cntr">
+                        <p class="txt-cntr col-1">50X</p>
+                    </div>
+                    <div class="content scrollbar-outer">
+                        <div class="tr active">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="player flex row">
+                                <img src="/assets/gambino.jpg">
+                                <p>
+                                Gambino<br>
+                                $320
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
 </div>
